@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/heighLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_cate_height">
+
+        <ImageView
+            android:id="@+id/imvCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_row_name_cate">
+
+            <TextView
+                android:id="@+id/txtNameCate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtPhoto"
+                android:paddingLeft="2dp"
+                android:layout_marginBottom="-12dp"
+                android:gravity="bottom"
+                android:text=" Natural"
+                android:textColor="@color/white_2"
+                android:textSize="38sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:text="  1020 photos - 434 views"
+                android:textColor="@color/white_2"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

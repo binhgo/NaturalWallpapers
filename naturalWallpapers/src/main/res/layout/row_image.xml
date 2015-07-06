@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingBottom="1dp"
+              android:paddingTop="1dp"
+              android:id="@+id/roots">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imgImageRow"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:background="#4D000000">
+
+            <TextView
+                android:id="@+id/txtPhotoName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:gravity="bottom"
+                android:text=" Image name"
+                android:singleLine="true"
+                android:paddingRight="20dp"
+                android:ellipsize="end"
+                android:textColor="@color/white_2"
+                android:textSize="@dimen/txt_15"
+                android:textStyle="italic"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

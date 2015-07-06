@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.tbwallpapers.naturalwallpapers.MainActivity">
+
+    <item
+        android:id="@+id/action_love"
+        android:orderInCategory="100"
+        android:title="Wallpaper"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/overflow_fijo"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_menu_moreoverflow_normal_holo_dark"
+        app:showAsAction="always"
+        android:title=""
+        >
+        <menu>
+
+            <item
+                android:id="@+id/action_rate"
+                android:title="Rate Us"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/action_info"
+                android:title="Info"
+                app:showAsAction="never"/>
+
+
+            <item
+                android:id="@+id/action_otherapp"
+                android:title="Other Apps"
+                app:showAsAction="never"/>
+
+        </menu>
+
+    </item>
+
+
+</menu>

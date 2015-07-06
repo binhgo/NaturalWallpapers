@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src/com/lvstudio/wallpapers/naturalwallpapers/BaseActivity.java" />
+        <ignore path="src/com/tbwallpapers/naturalwallpapers/BaseActivity.java" />
+        <ignore path="src/com/tbwallpapers/utils/SwipeRefreshLayoutBottom.java" />
+    </issue>
+</lint>
