@@ -202,7 +202,7 @@ public class WebServiceUtils
                     String url_k = (jo.has("url_k")) ? jo.getString("url_k") : "";
                     String url_l = (jo.has("url_l")) ? jo.getString("url_l") : "";
 
-                    if (url_o.length() == 0 && url_l.length() == 0)
+                    if (url_l.length() == 0)
                     {
                         url_l = url_m;
                     }

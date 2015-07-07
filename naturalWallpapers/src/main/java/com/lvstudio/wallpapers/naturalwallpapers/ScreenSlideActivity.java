@@ -25,6 +25,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lvwallpaper.model.PhotoGallery;
+import com.melnykov.fab.FloatingActionButton;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
@@ -47,7 +48,9 @@ public class ScreenSlideActivity extends BaseActivity
 
     private ViewPager mPager;
     private PagerAdapter mPagerAdapter;
-    private Button btnSetWallpaper, btnSave, btnFavorite;
+    private Button btnSetWallpaper;
+
+    FloatingActionButton btnSave, btnFavorite;
     private ArrayList<String> lstPhoto, lstPhotoURL_m, listPhotoName;
 
     private ArrayList<String>  listPhotoURL;
@@ -55,6 +58,13 @@ public class ScreenSlideActivity extends BaseActivity
     ProgressDialog progressDialog;
 
     protected ImageLoader imageLoader = ImageLoader.getInstance();
+
+    @Override
+    public void onTrimMemory(int level)
+    {
+        super.onTrimMemory(level);
+        Log.e("MEMORY","yyyÿyiiiiiiiiiiiiiiiiiijjjjjjjjjjjjjjj");
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -80,8 +90,9 @@ public class ScreenSlideActivity extends BaseActivity
 
         mPager = (ViewPager) findViewById(R.id.pager);
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
-        mPager.setOffscreenPageLimit(3);
+
         mPager.setAdapter(mPagerAdapter);
+        mPager.setOffscreenPageLimit(1);
         mPager.setCurrentItem(selectItem);
         mPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener()
         {
@@ -96,7 +107,7 @@ public class ScreenSlideActivity extends BaseActivity
 
 
         // Collections.sort(lstPhoto);
-        btnSave = (Button) findViewById(R.id.btnDownload);
+        btnSave = (FloatingActionButton) findViewById(R.id.btnDownload);
         btnSave.setOnClickListener(new OnClickListener()
         {
             @Override
@@ -107,7 +118,7 @@ public class ScreenSlideActivity extends BaseActivity
             }
         });
 
-        btnFavorite = (Button) findViewById(R.id.btnFavorite);
+        btnFavorite = (FloatingActionButton) findViewById(R.id.btnFavorite);
         btnFavorite.setOnClickListener(new OnClickListener()
         {
 
@@ -133,6 +144,11 @@ public class ScreenSlideActivity extends BaseActivity
 
         Toast.makeText(ScreenSlideActivity.this, "Click on Photo to Zoom and Swipe to next", Toast.LENGTH_LONG).show();
 
+    }
+
+    @Override
+    public void setWallpaper(Bitmap bitmap) throws IOException {
+        super.setWallpaper(bitmap);
     }
 
     private void setWallpaper(int pos)

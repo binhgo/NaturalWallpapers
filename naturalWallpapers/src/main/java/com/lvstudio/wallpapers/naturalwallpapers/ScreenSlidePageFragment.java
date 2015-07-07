@@ -62,6 +62,8 @@ public class ScreenSlidePageFragment extends Fragment
     private Photo photo;
     private boolean isFavorite;
 
+
+
     /**
      * Factory method for this fragment class. Constructs a new fragment for the
      * given page number.
@@ -77,6 +79,8 @@ public class ScreenSlidePageFragment extends Fragment
         return fragment;
     }
 
+
+
     public ScreenSlidePageFragment()
     {
     }
@@ -90,7 +94,7 @@ public class ScreenSlidePageFragment extends Fragment
         mPageNumber = getArguments().getInt(ARG_PAGE);
         lstPhoto = getArguments().getStringArrayList("listPhoto");
         listPhotoURL = getArguments().getStringArrayList("listPhotoURL");
-        options = new DisplayImageOptions.Builder().showImageOnLoading(R.drawable.loading).cacheOnDisk(true).imageScaleType(ImageScaleType.IN_SAMPLE_INT).cacheInMemory(true).bitmapConfig(Bitmap.Config.ARGB_8888).build();
+        options = new DisplayImageOptions.Builder().imageScaleType(ImageScaleType.EXACTLY).bitmapConfig(Bitmap.Config.ARGB_8888).build();
 
     }
 
@@ -274,5 +278,20 @@ public class ScreenSlidePageFragment extends Fragment
     public int getPageNumber()
     {
         return mPageNumber;
+    }
+
+    @Override
+    public void onDestroy()
+    {
+        super.onDestroy();
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        photo = null;
+        listPhotoURL = null;
+        lstPhoto = null;
+        imageLoader = null;
     }
 }
