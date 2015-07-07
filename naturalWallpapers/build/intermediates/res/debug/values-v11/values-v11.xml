@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Android/AS%20Project/NaturalWallpapers/naturalWallpapers/src/main/res/values-v11/styles.xml -->
+    <!-- From: file:/Android/GitHub/NaturalWallpapers/naturalWallpapers/src/main/res/values-v11/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
 
@@ -12,7 +12,7 @@
         <item name="windowActionBarOverlay">true</item>
 
     </style>
-    <!-- From: file:/Android/AS%20Project/NaturalWallpapers/naturalWallpapers/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-v11/values.xml -->
+    <!-- From: file:/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-v11/values.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat.Inverse">
         <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>

@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/btn_black_hover_custom" android:state_pressed="true"/>
     <item android:drawable="@drawable/btn_black_custom" android:state_pressed="false"/>
 
-</selector><!-- From: file:/Android/AS%20Project/NaturalWallpapers/naturalWallpapers/src/main/res/drawable-hdpi/button_black_background.xml -->
+</selector><!-- From: file:/Android/GitHub/NaturalWallpapers/naturalWallpapers/src/main/res/drawable-hdpi/button_black_background.xml -->

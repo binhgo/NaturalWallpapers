@@ -31,7 +31,7 @@
 
 
             <com.melnykov.fab.FloatingActionButton
-                android:id="@+id/save"
+                android:id="@+id/btnDownload"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|right"
@@ -47,7 +47,7 @@
 
 
             <com.melnykov.fab.FloatingActionButton
-                android:id="@+id/wallpaper"
+                android:id="@+id/btnFavorite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|right"
@@ -86,7 +86,7 @@
             android:visibility="gone"/>
 
         <Button
-            android:id="@+id/btnDownload"
+
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -97,7 +97,7 @@
             android:visibility="gone"/>
 
         <Button
-            android:id="@+id/btnFavorite"
+
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -116,4 +116,4 @@
         android:orientation="vertical">
     </LinearLayout>
 
-</LinearLayout><!-- From: file:/Android/AS%20Project/NaturalWallpapers/naturalWallpapers/src/main/res/layout/activity_screen_slide.xml -->
+</LinearLayout><!-- From: file:/Android/GitHub/NaturalWallpapers/naturalWallpapers/src/main/res/layout/activity_screen_slide.xml -->

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NaturalWallpapers.iml" filepath="$PROJECT_DIR$/NaturalWallpapers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestureimageview/gestureimageview.iml" filepath="$PROJECT_DIR$/gestureimageview/gestureimageview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/naturalWallpapers/naturalWallpapers.iml" filepath="$PROJECT_DIR$/naturalWallpapers/naturalWallpapers.iml" />
+    </modules>
+  </component>
+</project>
