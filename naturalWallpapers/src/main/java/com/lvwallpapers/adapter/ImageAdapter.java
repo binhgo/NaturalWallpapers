@@ -44,7 +44,7 @@ public class ImageAdapter extends BaseAdapter
         this.actionBarHeigh = actionBarHeight;
 
 
-        options = new DisplayImageOptions.Builder().showImageOnLoading(R.drawable.ic_launcher).showImageOnLoading(R.drawable.loading).imageScaleType(ImageScaleType.EXACTLY).cacheInMemory(true).cacheOnDisk(true).bitmapConfig(Bitmap.Config.ARGB_8888).build();
+        options = new DisplayImageOptions.Builder().imageScaleType(ImageScaleType.EXACTLY).cacheInMemory(false).cacheOnDisk(true).showImageOnFail(R.drawable.load_fail).bitmapConfig(Bitmap.Config.ARGB_8888).build();
 
     }
 

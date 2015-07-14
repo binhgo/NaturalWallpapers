@@ -94,7 +94,7 @@ public class ScreenSlidePageFragment extends Fragment
         mPageNumber = getArguments().getInt(ARG_PAGE);
         lstPhoto = getArguments().getStringArrayList("listPhoto");
         listPhotoURL = getArguments().getStringArrayList("listPhotoURL");
-        options = new DisplayImageOptions.Builder().imageScaleType(ImageScaleType.EXACTLY).bitmapConfig(Bitmap.Config.ARGB_8888).build();
+        options = new DisplayImageOptions.Builder().cacheInMemory(false).cacheOnDisk(true).showImageOnFail(R.drawable.load_fail).imageScaleType(ImageScaleType.EXACTLY).bitmapConfig(Bitmap.Config.ARGB_8888).build();
 
     }
 

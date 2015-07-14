@@ -26,8 +26,7 @@ public class PhotoZoomActivity extends Activity {
 		setContentView(R.layout.fragment_photozoom);
 		String uri = getIntent().getExtras().getString("URL");
 		options = new DisplayImageOptions.Builder()
-				.showImageOnLoading(R.drawable.loading)
-				.imageScaleType(ImageScaleType.EXACTLY).cacheInMemory(true)
+				.imageScaleType(ImageScaleType.EXACTLY).cacheInMemory(false)
 				.cacheOnDisk(true).bitmapConfig(Bitmap.Config.ARGB_8888)
 				.build();
 

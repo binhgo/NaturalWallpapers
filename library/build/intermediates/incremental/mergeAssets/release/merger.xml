@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\Android\myproject\NaturalWallpapers\library\src\main\assets"/></dataSet><dataSet config="release"><source path="E:\Android\myproject\NaturalWallpapers\library\src\release\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Android/GitHub/NaturalWallpapers/library/src/main/assets"/></dataSet><dataSet config="release"><source path="/Android/GitHub/NaturalWallpapers/library/src/release/assets"/></dataSet></merger>

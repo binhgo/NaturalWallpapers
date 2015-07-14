@@ -32,10 +32,10 @@
 
             <com.melnykov.fab.FloatingActionButton
                 android:id="@+id/btnDownload"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_gravity="bottom|right"
-                android:src="@drawable/download"
+                android:src="@drawable/download_white_48"
                 fab:fab_colorNormal="#CB4A62"
                 fab:fab_colorPressed="#444444"
                 fab:fab_colorRipple="#444444"
@@ -51,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|right"
-                android:src="@drawable/btn_rating_star_on_mtrl_alpha"
+                android:src="@drawable/star_white_48"
                 fab:fab_colorNormal="#CB4A62"
                 fab:fab_colorPressed="#444444"
                 fab:fab_colorRipple="#444444"
@@ -116,4 +116,4 @@
         android:orientation="vertical">
     </LinearLayout>
 
-</LinearLayout><!-- From: file:/E:/Android/myproject/NaturalWallpapers/naturalWallpapers/src/main/res/layout/activity_screen_slide.xml -->
+</LinearLayout><!-- From: file:/Android/GitHub/NaturalWallpapers/naturalWallpapers/src/main/res/layout/activity_screen_slide.xml -->

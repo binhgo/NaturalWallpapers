@@ -12,11 +12,20 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/row_cate_height">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Loading..."
+            android:textSize="20sp"
+            android:textColor="#666666"
+            android:textStyle="bold|italic"/>
+
+
         <ImageView
             android:id="@+id/imvCategory"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher"
             android:scaleType="centerCrop"/>
 
         <RelativeLayout

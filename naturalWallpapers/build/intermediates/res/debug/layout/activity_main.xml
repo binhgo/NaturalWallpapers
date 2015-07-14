@@ -45,9 +45,10 @@
         android:id="@+id/lnlAdmob"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="gone">
     </LinearLayout>
 
 
 
-</LinearLayout><!-- From: file:/E:/Android/myproject/NaturalWallpapers/naturalWallpapers/src/main/res/layout/activity_main.xml -->
+</LinearLayout><!-- From: file:/Android/GitHub/NaturalWallpapers/naturalWallpapers/src/main/res/layout/activity_main.xml -->
