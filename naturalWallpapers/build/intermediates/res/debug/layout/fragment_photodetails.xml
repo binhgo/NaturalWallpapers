@@ -26,7 +26,9 @@
                     android:text="Loading..."
                     android:textSize="20sp"
                     android:textColor="#ffffff"
-                    android:textStyle="bold|italic"/>
+                    android:textStyle="bold|italic"
+                    android:paddingTop="150dp"
+                    android:paddingBottom="50dp"/>
 
                 <ImageView
                     android:id="@+id/imgPhoto"
