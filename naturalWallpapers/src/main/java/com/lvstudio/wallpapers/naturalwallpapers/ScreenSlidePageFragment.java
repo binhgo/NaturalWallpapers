@@ -124,6 +124,12 @@ public class ScreenSlidePageFragment extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
 
+//        mPageNumber = getArguments().getInt(ARG_PAGE);
+//        lstPhoto = getArguments().getStringArrayList("listPhoto");
+//        listPhotoURL = getArguments().getStringArrayList("listPhotoURL");
+//        options = new DisplayImageOptions.Builder().cacheInMemory(false).cacheOnDisk(true).showImageOnFail(R.drawable.load_fail).imageScaleType(ImageScaleType.EXACTLY).bitmapConfig(Bitmap.Config.ARGB_8888).build();
+
+
         // Inflate the layout containing a title and body text.
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_photodetails, container, false);
 
@@ -289,9 +295,9 @@ public class ScreenSlidePageFragment extends Fragment
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        photo = null;
-        listPhotoURL = null;
-        lstPhoto = null;
-        imageLoader = null;
+//        photo = null;
+//        listPhotoURL = null;
+//        lstPhoto = null;
+//        imageLoader = null;
     }
 }

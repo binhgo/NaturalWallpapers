@@ -374,7 +374,7 @@ public class ScreenSlideActivity extends BaseActivity
         @Override
         public int getCount()
         {
-            return NUM_PAGES;
+            return lstPhoto.size();
         }
 
         private ScreenSlidePageFragment fragment;
