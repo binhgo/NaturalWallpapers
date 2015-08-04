@@ -417,7 +417,7 @@ public class WebServiceUtils
 
                 JSONArray joarray = new JSONArray(photos);
 
-                for (int i = joarray.length() - 1; i > 0; i--)
+                for (int i = joarray.length() - 1; i >= 0; i--)
                 {
                     JSONObject jo = joarray.getJSONObject(i);
 
@@ -435,16 +435,27 @@ public class WebServiceUtils
 
                     StringTokenizer stringTokenizer = new StringTokenizer(content, "_");
                     String categoryName = stringTokenizer.nextToken();
+                    String cateNo = stringTokenizer.nextToken();
+
+
+                    //
 
                     if (!listContain.contains(categoryName))
                     {
+
+
                         listContain.add(categoryName);
                         Category category = new Category();
                         category.categoryName = categoryName;
-                        category.imageLink = "http://farm" + farm + ".staticflickr.com/" + server + "/" + photoId + "_" + secret + "_b.jpg";
+                        if (cateNo.equalsIgnoreCase("0"))
+                        {
+                            category.imageLink = "http://farm" + farm + ".staticflickr.com/" + server + "/" + photoId + "_" + secret + "_b.jpg";
+
+                        }
                         category.numOfPhotos = category.numOfPhotos + Integer.parseInt(numOfPhotos);
 
                         listCategory.add(category);
+
 
                     }
                     else
@@ -454,6 +465,10 @@ public class WebServiceUtils
                         {
                             if (listCategory.get(j).categoryName.equalsIgnoreCase(categoryName))
                             {
+                                if (cateNo.equalsIgnoreCase("0"))
+                                {
+                                    listCategory.get(j).imageLink = "http://farm" + farm + ".staticflickr.com/" + server + "/" + photoId + "_" + secret + "_b.jpg";
+                                }
                                 listCategory.get(j).numOfPhotos = listCategory.get(j).numOfPhotos + Integer.parseInt(numOfPhotos);
                                 break;
                             }

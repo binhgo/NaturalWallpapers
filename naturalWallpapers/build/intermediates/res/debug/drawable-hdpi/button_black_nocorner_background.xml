@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/btn_black_hover_nocornercustom" android:state_pressed="true"/>
     <item android:drawable="@drawable/btn_black_nocorner_custom" android:state_pressed="false"/>
 
-</selector><!-- From: file:/D:/Github/WallpaperHd/naturalWallpapers/src/main/res/drawable-hdpi/button_black_nocorner_background.xml -->
+</selector><!-- From: file:/Android/GitHub/NaturalWallpapers/naturalWallpapers/src/main/res/drawable-hdpi/button_black_nocorner_background.xml -->
