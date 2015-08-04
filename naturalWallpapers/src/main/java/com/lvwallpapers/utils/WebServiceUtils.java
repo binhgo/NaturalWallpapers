@@ -34,7 +34,7 @@ public class WebServiceUtils
     private static final String STAT_OK = "ok";
 
     private static String GALLERY_ID = "130242490-72157651551754178";
-    private static String USER_ID = "132494002@N04";
+    private static String USER_ID = "134714375@N04";
 
     private static String getWeb_Url(String photoId)
     {
