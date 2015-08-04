@@ -23,7 +23,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="Loading..."
                     android:textSize="20sp"
                     android:textColor="#ffffff"
                     android:textStyle="bold|italic"
@@ -114,7 +113,6 @@
                     android:textSize="10sp"/>
 
 
-
             </RelativeLayout>
 
             <ImageView
@@ -153,4 +151,4 @@
         </LinearLayout>
     </ScrollView>
 
-</LinearLayout><!-- From: file:/Android/GitHub/NaturalWallpapers/naturalWallpapers/src/main/res/layout/fragment_photodetails.xml -->
+</LinearLayout><!-- From: file:/D:/Github/WallpaperHd/naturalWallpapers/src/main/res/layout/fragment_photodetails.xml -->

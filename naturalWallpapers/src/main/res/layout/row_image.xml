@@ -17,11 +17,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Loading..."
             android:textSize="20sp"
             android:textColor="#ffffff"
             android:textStyle="bold|italic"/>
-
 
 
         <ImageView
@@ -54,11 +52,7 @@
                 android:textStyle="italic"/>
 
 
-
-
         </RelativeLayout>
-
-
 
 
     </RelativeLayout>

@@ -34,7 +34,7 @@ public class WebServiceUtils
     private static final String STAT_OK = "ok";
 
     private static String GALLERY_ID = "130242490-72157651551754178";
-    private static String USER_ID = "132494002@N04";
+    private static String USER_ID = "134714375@N04";
 
     private static String getWeb_Url(String photoId)
     {
@@ -43,13 +43,11 @@ public class WebServiceUtils
 
     private static String getWeb_UrlGallery(int page)
     {
-
         return WEB_URL_GALLERY + "&api_key=" + KEY + "&gallery_id=" + GALLERY_ID + "&extras=%2C+url_l+%2C+url_m%2C+url_s+%2C+url_o&format=json&nojsoncallback=1&page=" + page + "&per_page=6";
     }
 
     private static String getWeb_UrlGallery(String galleryId)
     {
-
         return WEB_URL_GALLERY + "&api_key=" + KEY + "&gallery_id=" + galleryId + "&extras=%2C+url_l+%2C+url_m%2C+url_s+%2C+url_o%2C+url_h%2C+url_k&format=json&nojsoncallback=1&page=" + 1 + "&per_page=6";
     }
 

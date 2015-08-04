@@ -16,7 +16,6 @@
 
 package com.lvstudio.wallpapers.naturalwallpapers;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
@@ -63,7 +62,6 @@ public class ScreenSlidePageFragment extends Fragment
     private boolean isFavorite;
 
 
-
     /**
      * Factory method for this fragment class. Constructs a new fragment for the
      * given page number.
@@ -80,7 +78,6 @@ public class ScreenSlidePageFragment extends Fragment
     }
 
 
-
     public ScreenSlidePageFragment()
     {
     }
@@ -94,7 +91,7 @@ public class ScreenSlidePageFragment extends Fragment
         mPageNumber = getArguments().getInt(ARG_PAGE);
         lstPhoto = getArguments().getStringArrayList("listPhoto");
         listPhotoURL = getArguments().getStringArrayList("listPhotoURL");
-        options = new DisplayImageOptions.Builder().cacheInMemory(false).cacheOnDisk(true).showImageOnFail(R.drawable.load_fail).imageScaleType(ImageScaleType.EXACTLY).bitmapConfig(Bitmap.Config.ARGB_8888).build();
+        options = new DisplayImageOptions.Builder().cacheInMemory(false).cacheOnDisk(true).showImageOnFail(R.drawable.load_fail).showImageOnLoading(R.drawable.loading).imageScaleType(ImageScaleType.EXACTLY).bitmapConfig(Bitmap.Config.ARGB_8888).build();
 
     }
 
@@ -293,7 +290,8 @@ public class ScreenSlidePageFragment extends Fragment
     }
 
     @Override
-    public void onDestroyView() {
+    public void onDestroyView()
+    {
         super.onDestroyView();
 //        photo = null;
 //        listPhotoURL = null;

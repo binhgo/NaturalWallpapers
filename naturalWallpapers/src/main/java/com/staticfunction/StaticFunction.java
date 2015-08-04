@@ -5,13 +5,19 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
 import android.util.DisplayMetrics;
+import android.view.View;
 
 import com.lvstudio.wallpapers.naturalwallpapers.CategoryActivity;
-import com.lvstudio.wallpapers.naturalwallpapers.MainActivity;
+import com.lvstudio.wallpapers.naturalwallpapers.R;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.assist.FailReason;
+import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 
 /**
  * Created by user on 6/24/2015.
@@ -32,6 +38,119 @@ public class StaticFunction
     {
         Typeface typeface = Typeface.createFromAsset(activity.getAssets(), "fonts/Qualit_Deluxe_Platinium.ttf");
         return typeface;
+    }
+
+    public static void sendNotificationBigNoImage(final Context ctx, final int notifyId, final String title, final String subTitle, final String bigTitleforNewAPI)
+    {
+
+        Bitmap bitmap = BitmapFactory.decodeResource(ctx.getResources(), R.drawable.galaxy);
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(ctx).setAutoCancel(true).setContentTitle(title).setSmallIcon(R.drawable.ic_launcher).setContentText(subTitle);
+
+        NotificationCompat.BigPictureStyle bigPicStyle = new NotificationCompat.BigPictureStyle();
+        bigPicStyle.bigPicture(bitmap);
+        bigPicStyle.setBigContentTitle(bigTitleforNewAPI);
+        bigPicStyle.setSummaryText(subTitle);
+        mBuilder.setStyle(bigPicStyle);
+
+        // Creates an explicit intent for an Activity in your app
+        Intent resultIntent = new Intent(ctx, CategoryActivity.class);
+
+        // The stack builder object will contain an artificial back stack
+        // for
+        // the
+        // started Activity.
+        // This ensures that navigating backward from the Activity leads out
+        // of
+        // your application to the Home screen.
+        TaskStackBuilder stackBuilder = TaskStackBuilder.create(ctx);
+
+        // Adds the back stack for the Intent (but not the Intent itself)
+        //stackBuilder.addParentStack(testActivity.class);
+
+        // Adds the Intent that starts the Activity to the top of the stack
+        stackBuilder.addNextIntent(resultIntent);
+        PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
+        mBuilder.setContentIntent(resultPendingIntent);
+
+        NotificationManager mNotificationManager = (NotificationManager) ctx.getSystemService(Context.NOTIFICATION_SERVICE);
+
+        // mId allows you to update the notification later on.
+        mNotificationManager.notify(notifyId, mBuilder.build());
+    }
+
+    public static void sendNotificationBigWithImage(final Context ctx, final int notifyId, final String title, final String subTitle, final String bigTitleforNewAPI, Bitmap bitmap)
+    {
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(ctx).setAutoCancel(true).setContentTitle(title).setSmallIcon(R.drawable.ic_launcher).setContentText(subTitle);
+
+        NotificationCompat.BigPictureStyle bigPicStyle = new NotificationCompat.BigPictureStyle();
+        bigPicStyle.bigPicture(bitmap);
+        bigPicStyle.setBigContentTitle(bigTitleforNewAPI);
+        bigPicStyle.setSummaryText(subTitle);
+        mBuilder.setStyle(bigPicStyle);
+
+        // Creates an explicit intent for an Activity in your app
+        Intent resultIntent = new Intent(ctx, CategoryActivity.class);
+
+        // The stack builder object will contain an artificial back stack
+        // for
+        // the
+        // started Activity.
+        // This ensures that navigating backward from the Activity leads out
+        // of
+        // your application to the Home screen.
+        TaskStackBuilder stackBuilder = TaskStackBuilder.create(ctx);
+
+        // Adds the back stack for the Intent (but not the Intent itself)
+        //stackBuilder.addParentStack(testActivity.class);
+
+        // Adds the Intent that starts the Activity to the top of the stack
+        stackBuilder.addNextIntent(resultIntent);
+        PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
+        mBuilder.setContentIntent(resultPendingIntent);
+
+        NotificationManager mNotificationManager = (NotificationManager) ctx.getSystemService(Context.NOTIFICATION_SERVICE);
+
+        // mId allows you to update the notification later on.
+        mNotificationManager.notify(notifyId, mBuilder.build());
+    }
+
+    public static void sendNotificationBig(final Context ctx, final int notifyId, final String title, final String subTitle, final String bigTitleforNewAPI, String imageURL)
+    {
+        if (imageURL.isEmpty())
+        {
+            sendNotificationBigNoImage(ctx, notifyId, title, subTitle, bigTitleforNewAPI);
+        }
+        else
+        {
+            ImageLoader.getInstance().loadImage(imageURL, new ImageLoadingListener()
+            {
+                @Override
+                public void onLoadingStarted(String s, View view)
+                {
+
+                }
+
+                @Override
+                public void onLoadingFailed(String s, View view, FailReason failReason)
+                {
+                    sendNotificationBigNoImage(ctx, notifyId, title, subTitle, bigTitleforNewAPI);
+                }
+
+                @Override
+                public void onLoadingComplete(String s, View view, Bitmap bitmap)
+                {
+                    sendNotificationBigWithImage(ctx, notifyId, title, subTitle, bigTitleforNewAPI, bitmap);
+                }
+
+                @Override
+                public void onLoadingCancelled(String s, View view)
+                {
+                    sendNotificationBigNoImage(ctx, notifyId, title, subTitle, bigTitleforNewAPI);
+                }
+            });
+        }
+
+
     }
 
     public static void sendNotification(Context ctx, String notificationDetails, String sub, int notifyId, int iconResource)
@@ -65,8 +184,6 @@ public class StaticFunction
 
         // Dismiss notification once the user touches it.
         builder.setAutoCancel(true);
-
-        builder.setVibrate(new long[]{0, 1000, 500, 1000, 500, 1000});
 
 
         // Get an instance of the Notification manager
