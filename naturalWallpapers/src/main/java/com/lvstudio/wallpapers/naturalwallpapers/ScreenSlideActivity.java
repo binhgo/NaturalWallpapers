@@ -53,8 +53,8 @@ public class ScreenSlideActivity extends BaseActivity
     FloatingActionButton btnSave, btnFavorite;
     private ArrayList<String> lstPhoto, lstPhotoURL_m, listPhotoName;
 
-    private ArrayList<String>  listPhotoURL;
-    private ArrayList<String>  listPhotoURL_Best;
+    private ArrayList<String> listPhotoURL;
+    private ArrayList<String> listPhotoURL_Best;
     ProgressDialog progressDialog;
 
     protected ImageLoader imageLoader = ImageLoader.getInstance();
@@ -63,7 +63,7 @@ public class ScreenSlideActivity extends BaseActivity
     public void onTrimMemory(int level)
     {
         super.onTrimMemory(level);
-        Log.e("MEMORY","yyyÿyiiiiiiiiiiiiiiiiiijjjjjjjjjjjjjjj");
+        Log.e("MEMORY", "yyyÿyiiiiiiiiiiiiiiiiiijjjjjjjjjjjjjjj");
     }
 
     @Override
@@ -147,20 +147,19 @@ public class ScreenSlideActivity extends BaseActivity
     }
 
     @Override
-    public void setWallpaper(Bitmap bitmap) throws IOException {
+    public void setWallpaper(Bitmap bitmap) throws IOException
+    {
         super.setWallpaper(bitmap);
     }
 
     private void setWallpaper(int pos)
     {
-
         imageLoader.loadImage(listPhotoURL_Best.get(pos), new ImageLoadingListener()
         {
-
             @Override
             public void onLoadingStarted(String arg0, View arg1)
             {
-                progressDialog = ProgressDialog.show(ScreenSlideActivity.this, null, "Processing....");
+                progressDialog = ProgressDialog.show(ScreenSlideActivity.this, null, "Processing, it may take long time to complete.\nPlease be patient...");
             }
 
             @Override

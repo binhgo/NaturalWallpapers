@@ -49,7 +49,6 @@ public class MainActivity extends BaseActivity implements SwipeRefreshLayoutBott
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         String categoryName = "";
         categoryName = this.getIntent().getStringExtra("CategoryName").toString();
 

@@ -18,16 +18,14 @@
             />
 
 
-
         <LinearLayout
             android:id="@+id/second"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_above="@+id/lnlAdmob"
             android:orientation="horizontal"
             android:gravity="right"
             >
-
 
 
             <com.melnykov.fab.FloatingActionButton
@@ -60,6 +58,15 @@
                 android:layout_marginRight="7dp"
                 android:layout_marginBottom="5dp"/>
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/lnlAdmob"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#000000"
+            android:orientation="vertical">
         </LinearLayout>
 
     </RelativeLayout>
@@ -108,12 +115,5 @@
             android:visibility="gone"/>
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/lnlAdmob"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#000000"
-        android:orientation="vertical">
-    </LinearLayout>
 
-</LinearLayout><!-- From: file:/Android/GitHub/NaturalWallpapers/naturalWallpapers/src/main/res/layout/activity_screen_slide.xml -->
+</LinearLayout><!-- From: file:/D:/Github/WallpaperHd/naturalWallpapers/src/main/res/layout/activity_screen_slide.xml -->

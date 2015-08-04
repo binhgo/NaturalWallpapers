@@ -36,15 +36,13 @@ public class ImageAdapter extends BaseAdapter
 
     public ImageAdapter(Context context, int columnwidth, List<PhotoGallery> lstPhotos, int actionBarHeight)
     {
-
         this._mcontext = context;
         this.mInflater = LayoutInflater.from(context);
         this.columWidth = columnwidth;
         this.lstPhotos = lstPhotos;
         this.actionBarHeigh = actionBarHeight;
 
-
-        options = new DisplayImageOptions.Builder().imageScaleType(ImageScaleType.EXACTLY).cacheInMemory(false).cacheOnDisk(true).showImageOnFail(R.drawable.load_fail).bitmapConfig(Bitmap.Config.ARGB_8888).build();
+        options = new DisplayImageOptions.Builder().imageScaleType(ImageScaleType.EXACTLY).cacheInMemory(false).cacheOnDisk(true).showImageOnFail(R.drawable.load_fail).showImageOnLoading(R.drawable.loading).bitmapConfig(Bitmap.Config.ARGB_8888).build();
 
     }
 

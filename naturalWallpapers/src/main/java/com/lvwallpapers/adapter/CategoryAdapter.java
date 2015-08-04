@@ -43,7 +43,7 @@ public class CategoryAdapter extends BaseAdapter
         this.layoutInflater = LayoutInflater.from(activity);
         this.activity = activity;
         desireHeight = height;
-        options = new DisplayImageOptions.Builder().cacheInMemory(false).cacheOnDisk(true).displayer(new RoundedBitmapDisplayer((int) (5 * StaticFunction.getDensity(activity)))).showImageOnFail(R.drawable.load_fail).build();
+        options = new DisplayImageOptions.Builder().cacheInMemory(false).cacheOnDisk(true).displayer(new RoundedBitmapDisplayer((int) (5 * StaticFunction.getDensity(activity)))).showImageOnFail(R.drawable.load_fail).showImageOnLoading(R.drawable.loading).build();
     }
 
     @Override

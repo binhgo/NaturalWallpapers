@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.ListView;
 
 import com.lvwallpaper.model.Category;
-import com.lvwallpapers.GCM.PlayServicesHelper;
 import com.lvwallpapers.adapter.CategoryAdapter;
 import com.lvwallpapers.utils.WebServiceUtils;
 
@@ -48,7 +47,7 @@ public class CategoryActivity extends Activity
         LoadGalleryDobackground loadGalleryDobackground = new LoadGalleryDobackground();
         loadGalleryDobackground.execute();
 
-        PlayServicesHelper playServicesHelper = new PlayServicesHelper(CategoryActivity.this);
+        //PlayServicesHelper playServicesHelper = new PlayServicesHelper(CategoryActivity.this);
     }
 
     public int getScreenHeight()

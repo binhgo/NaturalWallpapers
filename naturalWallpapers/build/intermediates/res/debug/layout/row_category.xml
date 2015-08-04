@@ -16,7 +16,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Loading..."
             android:textSize="20sp"
             android:textColor="#666666"
             android:textStyle="bold|italic"/>
@@ -59,4 +58,4 @@
                 android:textSize="20sp"/>
         </RelativeLayout>
     </RelativeLayout>
-</RelativeLayout><!-- From: file:/Android/GitHub/NaturalWallpapers/naturalWallpapers/src/main/res/layout/row_category.xml -->
+</RelativeLayout><!-- From: file:/D:/Github/WallpaperHd/naturalWallpapers/src/main/res/layout/row_category.xml -->

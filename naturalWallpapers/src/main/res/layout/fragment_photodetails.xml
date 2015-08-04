@@ -23,7 +23,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="Loading..."
                     android:textSize="20sp"
                     android:textColor="#ffffff"
                     android:textStyle="bold|italic"
@@ -112,7 +111,6 @@
                     android:singleLine="true"
                     android:textColor="#1E90FF"
                     android:textSize="10sp"/>
-
 
 
             </RelativeLayout>
