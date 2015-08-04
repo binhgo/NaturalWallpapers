@@ -417,7 +417,7 @@ public class WebServiceUtils
 
                 JSONArray joarray = new JSONArray(photos);
 
-                for (int i = 0; i < joarray.length(); i++)
+                for (int i = joarray.length() - 1; i > 0; i--)
                 {
                     JSONObject jo = joarray.getJSONObject(i);
 
