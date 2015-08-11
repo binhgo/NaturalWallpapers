@@ -65,7 +65,7 @@
             android:id="@+id/lnlAdmob"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#000000"
+            android:background="#2c3136"
             android:orientation="vertical">
         </LinearLayout>
 

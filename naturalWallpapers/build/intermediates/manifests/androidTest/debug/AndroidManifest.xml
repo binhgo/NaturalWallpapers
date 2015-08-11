@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lvstudio.wallpapers.naturalwallpapers.test">
+    package="com.vlb.wallpaper.test">
 
     <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="21" />
 
@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.lvstudio.wallpapers.naturalwallpapers"
+                     android:targetPackage="com.vlb.wallpaper"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.lvstudio.wallpapers.naturalwallpapers"/>
+                     android:label="Tests for com.vlb.wallpaper"/>
 </manifest>

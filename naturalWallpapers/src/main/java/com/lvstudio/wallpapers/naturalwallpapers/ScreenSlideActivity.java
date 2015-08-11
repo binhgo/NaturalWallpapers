@@ -39,7 +39,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-
+import com.vlb.wallpaper.R;
 public class ScreenSlideActivity extends BaseActivity
 {
 
@@ -186,7 +186,10 @@ public class ScreenSlideActivity extends BaseActivity
                     wallpaperManager.setBitmap(bitmap);
                     wallpaperManager.suggestDesiredDimensions(width, height);
                     showFullBannerEdit(false);
-                    Toast.makeText(ScreenSlideActivity.this, "Wallpaper Set", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ScreenSlideActivity.this, "Done", Toast.LENGTH_SHORT).show();
+
+
+                    //sssshowFullBannerEdit(true);
 
                 }
                 catch (IOException e)

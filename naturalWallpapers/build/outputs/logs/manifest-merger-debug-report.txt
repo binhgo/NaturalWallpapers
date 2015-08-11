@@ -53,13 +53,13 @@ uses-permission#android.permission.VIBRATE
 ADDED from AndroidManifest.xml:17:5
 	android:name
 		ADDED from AndroidManifest.xml:17:22
-permission#com.lvstudio.wallpapers.naturalwallpapers.permission.C2D_MESSAGE
+permission#com.vlb.wallpaper.permission.C2D_MESSAGE
 ADDED from AndroidManifest.xml:20:5
 	android:protectionLevel
 		ADDED from AndroidManifest.xml:22:9
 	android:name
 		ADDED from AndroidManifest.xml:21:9
-uses-permission#com.lvstudio.wallpapers.naturalwallpapers.permission.C2D_MESSAGE
+uses-permission#com.vlb.wallpaper.permission.C2D_MESSAGE
 ADDED from AndroidManifest.xml:24:5
 	android:name
 		ADDED from AndroidManifest.xml:24:22
@@ -228,7 +228,7 @@ ADDED from AndroidManifest.xml:123:9
 		ADDED from AndroidManifest.xml:125:13
 	android:name
 		ADDED from AndroidManifest.xml:124:13
-intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+com.lvstudio.wallpapers.naturalwallpapers
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+com.vlb.wallpaper
 ADDED from AndroidManifest.xml:126:13
 action#com.google.android.c2dm.intent.RECEIVE
 ADDED from AndroidManifest.xml:127:17
@@ -238,7 +238,7 @@ action#com.google.android.c2dm.intent.REGISTRATION
 ADDED from AndroidManifest.xml:128:17
 	android:name
 		ADDED from AndroidManifest.xml:128:25
-category#com.lvstudio.wallpapers.naturalwallpapers
+category#com.vlb.wallpaper
 ADDED from AndroidManifest.xml:133:17
 	android:name
 		ADDED from AndroidManifest.xml:133:27

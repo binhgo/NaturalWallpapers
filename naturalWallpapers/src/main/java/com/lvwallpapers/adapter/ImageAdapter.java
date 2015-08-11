@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.lvstudio.wallpapers.naturalwallpapers.R;
+
 import com.lvwallpaper.model.PhotoGallery;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -21,7 +21,7 @@ import com.staticfunction.StaticFunction;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import com.vlb.wallpaper.R;
 public class ImageAdapter extends BaseAdapter
 {
 

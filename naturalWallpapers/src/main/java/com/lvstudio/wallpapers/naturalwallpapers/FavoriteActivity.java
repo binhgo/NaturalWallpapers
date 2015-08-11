@@ -12,7 +12,7 @@ import com.lvwallpapers.adapter.ImageAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import com.vlb.wallpaper.R;
 public class FavoriteActivity extends BaseActivity
 {
 

@@ -29,6 +29,7 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
+import com.vlb.wallpaper.R;
 
 public class BaseActivity extends ActionBarActivity
 {
@@ -175,7 +176,7 @@ public class BaseActivity extends ActionBarActivity
         adRequest = new AdRequest.Builder().build();
         adView = new AdView(this);
         adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId("ca-app-pub-4957795921749867/4490300639");
+        adView.setAdUnitId("ca-app-pub-6956931160448072/9924001545");
 
         LinearLayout layout = (LinearLayout) findViewById(R.id.lnlAdmob);
 
@@ -183,7 +184,7 @@ public class BaseActivity extends ActionBarActivity
         adView.loadAd(adRequest);
 
         interstitial = new InterstitialAd(this);
-        interstitial.setAdUnitId("ca-app-pub-4957795921749867/5967033835");
+        interstitial.setAdUnitId("ca-app-pub-6956931160448072/2400734747");
 
         interstitial.setAdListener(new AdListener()
         {
@@ -275,7 +276,7 @@ public class BaseActivity extends ActionBarActivity
             SharedPreferences.Editor editor = prefs.edit();
             if (count == 0)
             {
-                //interstitial.loadAd(adRequest);
+                interstitial.loadAd(adRequest);
                 editor.putBoolean("isTurnedit", false);
                 editor.putInt("isTurneditCount", ++count);
                 editor.commit();
@@ -294,7 +295,7 @@ public class BaseActivity extends ActionBarActivity
         }
         else
         {
-            //interstitial.loadAd(adRequest);
+            interstitial.loadAd(adRequest);
         }
     }
 

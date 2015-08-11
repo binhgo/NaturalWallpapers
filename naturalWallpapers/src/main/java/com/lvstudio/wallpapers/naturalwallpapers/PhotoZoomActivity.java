@@ -12,7 +12,7 @@ import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 import com.polites.android.GestureImageView;
-
+import com.vlb.wallpaper.R;
 public class PhotoZoomActivity extends Activity
 {
 

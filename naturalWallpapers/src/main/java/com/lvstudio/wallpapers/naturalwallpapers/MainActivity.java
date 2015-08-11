@@ -28,7 +28,7 @@ import com.staticfunction.StaticFunction;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
+import com.vlb.wallpaper.R;
 public class MainActivity extends BaseActivity implements SwipeRefreshLayoutBottom.OnRefreshListener
 {
 
@@ -59,7 +59,7 @@ public class MainActivity extends BaseActivity implements SwipeRefreshLayoutBott
 
         initialData(categoryName);
         initialAdmob();
-        showFullBannerEdit(false);
+        //showFullBannerEdit(false);
     }
 
     private void initialView()

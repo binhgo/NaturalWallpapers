@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.lvstudio.wallpapers.naturalwallpapers"
+          package="com.vlb.wallpaper"
           android:versionCode="1"
           android:versionName="1.0">
 
@@ -18,10 +18,10 @@
 
 
     <permission
-        android:name="com.lvstudio.wallpapers.naturalwallpapers.permission.C2D_MESSAGE"
+        android:name="com.vlb.wallpaper.permission.C2D_MESSAGE"
         android:protectionLevel="signature"/>
 
-    <uses-permission android:name="com.lvstudio.wallpapers.naturalwallpapers.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.vlb.wallpaper.permission.C2D_MESSAGE"/>
 
     <application
         android:name="com.lvstudio.wallpapers.naturalwallpapers.BeautifulWallpaperAplication"
@@ -46,7 +46,7 @@
             android:value="com.lvwallpaper.model"/>
 
         <activity
-            android:name=".CategoryActivity"
+            android:name="com.lvstudio.wallpapers.naturalwallpapers.CategoryActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.NoTitleBar"
@@ -58,28 +58,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ScreenSlideActivity"
+            android:name="com.lvstudio.wallpapers.naturalwallpapers.ScreenSlideActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.lvstudio.wallpapers.naturalwallpapers.MainActivity"
             android:screenOrientation="portrait">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value="com.lvstudio.wallpapers.naturalwallpapers.MainActivity"/>
         </activity>
         <activity
-            android:name=".PhotoZoomActivity"
+            android:name="com.lvstudio.wallpapers.naturalwallpapers.PhotoZoomActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.lvstudio.wallpapers.naturalwallpapers.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".FavoriteActivity"
+            android:name="com.lvstudio.wallpapers.naturalwallpapers.FavoriteActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"/>
         <activity
@@ -130,7 +130,7 @@
                 <!--
                   IMPORTANT: Change "com.parse.starter" to match your app's package name.
                 -->
-                <category android:name="com.lvstudio.wallpapers.naturalwallpapers"/>
+                <category android:name="com.vlb.wallpaper"/>
             </intent-filter>
         </receiver>
 

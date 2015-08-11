@@ -7,7 +7,7 @@ import android.os.Handler;
 import android.widget.Toast;
 
 import com.google.android.gms.gcm.GoogleCloudMessaging;
-import com.lvstudio.wallpapers.naturalwallpapers.R;
+import com.vlb.wallpaper.R;
 import com.staticfunction.StaticFunction;
 
 public class GcmMessageHandler extends IntentService {

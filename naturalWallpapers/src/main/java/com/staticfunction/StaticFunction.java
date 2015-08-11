@@ -14,7 +14,7 @@ import android.util.DisplayMetrics;
 import android.view.View;
 
 import com.lvstudio.wallpapers.naturalwallpapers.CategoryActivity;
-import com.lvstudio.wallpapers.naturalwallpapers.R;
+import com.vlb.wallpaper.R;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;

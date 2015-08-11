@@ -40,7 +40,7 @@ import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import com.vlb.wallpaper.R;
 
 public class ScreenSlidePageFragment extends Fragment
 {

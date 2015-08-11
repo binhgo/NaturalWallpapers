@@ -16,6 +16,7 @@ import com.lvwallpapers.utils.WebServiceUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.vlb.wallpaper.R;
 
 /**
  * Created by USER on 6/30/2015.

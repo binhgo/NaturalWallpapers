@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lvstudio.wallpapers.naturalwallpapers"
+    package="com.vlb.wallpaper"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -20,10 +20,10 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <permission
-        android:name="com.lvstudio.wallpapers.naturalwallpapers.permission.C2D_MESSAGE"
+        android:name="com.vlb.wallpaper.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.lvstudio.wallpapers.naturalwallpapers.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.vlb.wallpaper.permission.C2D_MESSAGE" />
 
     <application
         android:name="com.lvstudio.wallpapers.naturalwallpapers.BeautifulWallpaperAplication"
@@ -69,7 +69,7 @@
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.lvstudio.wallpapers.naturalwallpapers.MainActivity" />
         </activity>
         <activity
             android:name="com.lvstudio.wallpapers.naturalwallpapers.PhotoZoomActivity"
@@ -130,7 +130,7 @@
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
 <!--                   IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
-                <category android:name="com.lvstudio.wallpapers.naturalwallpapers" />
+                <category android:name="com.vlb.wallpaper" />
             </intent-filter>
         </receiver>
 

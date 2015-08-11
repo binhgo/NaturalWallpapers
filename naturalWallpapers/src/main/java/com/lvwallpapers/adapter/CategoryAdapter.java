@@ -11,12 +11,12 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.lvstudio.wallpapers.naturalwallpapers.MainActivity;
-import com.lvstudio.wallpapers.naturalwallpapers.R;
 import com.lvwallpaper.model.Category;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
 import com.staticfunction.StaticFunction;
+import com.vlb.wallpaper.R;
 
 import java.util.List;
 
