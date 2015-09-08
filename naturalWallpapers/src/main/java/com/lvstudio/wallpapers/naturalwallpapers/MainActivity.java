@@ -344,7 +344,7 @@ public class MainActivity extends BaseActivity implements SwipeRefreshLayoutBott
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + getPackageName().toString())));
                 return true;
             case R.id.action_otherapp:
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/search?q=lvstudio&hl=en")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/search?q=vlb&hl=en")));
                 return true;
 
             default:
