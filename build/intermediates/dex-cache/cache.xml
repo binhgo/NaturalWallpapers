@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/exploded-aar/NaturalWallpapers/library/unspecified/jars/classes.jar"
+        jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="ec3d7dd5482e59af1ba4c98e3800aff7b6e263e8">
-        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/debug/classes-67a4097f316e8d65c798f16b9506fd6c37dce061.jar" />
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/release/internal_impl-21.0.3-0d86d76249604081ef1d1315a09825e056ebfc7b.jar" />
     </item>
     <item
         jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/jars/classes.jar"
@@ -16,25 +16,18 @@
         <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/release/classes-c65b48347bf21b848a44478052a3b14d6fece6cc.jar" />
     </item>
     <item
-        jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/exploded-aar/NaturalWallpapers/gestureimageview/unspecified/jars/classes.jar"
+        jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/exploded-aar/NaturalWallpapers/library/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="008add12d7b381f002f66903b7ace3a62b1a997a">
-        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/debug/classes-68c89919f719edeab7f01525c2c66facd50c88b7.jar" />
+        sha1="ec3d7dd5482e59af1ba4c98e3800aff7b6e263e8">
+        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/debug/classes-67a4097f316e8d65c798f16b9506fd6c37dce061.jar" />
     </item>
     <item
-        jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"
+        jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/release/internal_impl-21.0.3-0d86d76249604081ef1d1315a09825e056ebfc7b.jar" />
-    </item>
-    <item
-        jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/libs/Parse-1.9.4.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="56c22930b5d4f77015b6a40c7f14103d3e101001">
-        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/debug/Parse-1.9.4-82c8faca5059493912a264df97ae3e048087dc88.jar" />
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/release/classes-5b8096bff84113b2abfd09de492fedeea40ba10b.jar" />
     </item>
     <item
         jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.3.0/jars/classes.jar"
@@ -44,18 +37,11 @@
         <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/release/classes-012eafe4e111a6e5ef881a9d02b7022853681730.jar" />
     </item>
     <item
-        jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/jars/classes.jar"
+        jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/libs/universal-image-loader-1.9.3.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/release/classes-82f479f8196fdcfd9f2baee0bca91208bb1d28b8.jar" />
-    </item>
-    <item
-        jar="/Users/HuynhBinh/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/release/support-annotations-21.0.3-767e66a3f59fbd370d3911af386647ce7ccb5e0e.jar" />
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/release/universal-image-loader-1.9.3-8180a7ee307f3be8078c474b75635c536ce13ff6.jar" />
     </item>
     <item
         jar="/Users/HuynhBinh/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
@@ -65,18 +51,39 @@
         <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/release/library-2.4.0-ef8661ceaf20c9bd29873ac6b27b132ddf82267d.jar" />
     </item>
     <item
-        jar="/Users/HuynhBinh/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jar="/Users/HuynhBinh/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.3.0/8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c/bolts-tasks-1.3.0.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
-        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-10b2210aae4719fc4f1ffd12c4cc34dedb7e8615.jar" />
+        sha1="8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c">
+        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/debug/bolts-tasks-1.3.0-b05d2560d3f35ba27a51f26b407f8eec47fdf8ad.jar" />
     </item>
     <item
-        jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/libs/universal-image-loader-1.9.3.jar"
+        jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/exploded-aar/NaturalWallpapers/gestureimageview/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
-        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/release/universal-image-loader-1.9.3-8180a7ee307f3be8078c474b75635c536ce13ff6.jar" />
+        sha1="008add12d7b381f002f66903b7ace3a62b1a997a">
+        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/debug/classes-68c89919f719edeab7f01525c2c66facd50c88b7.jar" />
+    </item>
+    <item
+        jar="/Users/HuynhBinh/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.3.0/bc535105332645408ef5f1380215cc954b842178/bolts-applinks-1.3.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bc535105332645408ef5f1380215cc954b842178">
+        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/debug/bolts-applinks-1.3.0-db6c658c5a0fec77b6f4b001417c723d8380b5fb.jar" />
+    </item>
+    <item
+        jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/libs/Parse-1.9.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="56c22930b5d4f77015b6a40c7f14103d3e101001">
+        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/debug/Parse-1.9.4-82c8faca5059493912a264df97ae3e048087dc88.jar" />
+    </item>
+    <item
+        jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/release/classes-82f479f8196fdcfd9f2baee0bca91208bb1d28b8.jar" />
     </item>
     <item
         jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/jars/classes.jar"
@@ -86,11 +93,18 @@
         <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/release/classes-e098ac3ae06c2fb535164dd212e9d22eeef8c63d.jar" />
     </item>
     <item
-        jar="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
+        jar="/Users/HuynhBinh/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/release/classes-5b8096bff84113b2abfd09de492fedeea40ba10b.jar" />
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/release/support-annotations-21.0.3-767e66a3f59fbd370d3911af386647ce7ccb5e0e.jar" />
+    </item>
+    <item
+        jar="/Users/HuynhBinh/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.3.0/27cabf3558be23a89f054334dd92512645ad34d9/bolts-android-1.3.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="27cabf3558be23a89f054334dd92512645ad34d9">
+        <dex dex="/Android/GitHub/NaturalWallpapers/naturalWallpapers/build/intermediates/pre-dexed/debug/bolts-android-1.3.0-53f73ca6cd339cbd801ca234b2b09b16529fba0f.jar" />
     </item>
 
 </items>

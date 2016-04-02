@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -23,6 +24,9 @@ import com.lvwallpaper.model.UserGallery;
 import com.lvwallpapers.adapter.ImageAdapter;
 import com.lvwallpapers.utils.SwipeRefreshLayoutBottom;
 import com.lvwallpapers.utils.WebServiceUtils;
+import com.parse.LocationCallback;
+import com.parse.ParseException;
+import com.parse.ParseGeoPoint;
 import com.staticfunction.StaticFunction;
 
 import java.util.ArrayList;
@@ -60,6 +64,17 @@ public class MainActivity extends BaseActivity implements SwipeRefreshLayoutBott
         initialData(categoryName);
         initialAdmob();
         //showFullBannerEdit(false);
+
+
+        ParseGeoPoint.getCurrentLocationInBackground(60000, new LocationCallback()
+        {
+            @Override
+            public void done(ParseGeoPoint parseGeoPoint, ParseException e)
+            {
+                Log.e("sdsdsd","sdsdsd");
+            }
+        });
+
     }
 
     private void initialView()
